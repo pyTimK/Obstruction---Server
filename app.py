@@ -221,7 +221,7 @@ def coding_update(day: str):
 
 #! REAL TIME COMMUNICATION
 def main():
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
 
 
 

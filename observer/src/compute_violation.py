@@ -3,7 +3,7 @@ import requests
 from .constants import url_base, headers
 import json
 
-seconds_still_present = 60
+seconds_still_present = 60 * 2
 seconds_for_violation = 60 * 5
 
 def more_than_last_time(now: datetime, car):
@@ -34,7 +34,7 @@ def compute_obstruction(car, violation_time: datetime):
     return False
 
 
-def compute_missing(car, violation_time: datetime) -> bool:
+def compute_unregistered(car, violation_time: datetime) -> bool:
     return car['missing']
 
 def compute_coding(car, violation_time: datetime) -> bool:

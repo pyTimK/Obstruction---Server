@@ -128,7 +128,7 @@ class MongoDBHelper:
         
         violation2 = {
                 "plate_number": car2["_id"],
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
                 "date": datetime.now(),
                 "model": car2["model"],
                 "color": car2["color"],
@@ -136,7 +136,7 @@ class MongoDBHelper:
         
         violation3 = {
                 "plate_number": car3["_id"],
-                "violations": ["Obstruction", "Missing"],
+                "violations": ["Obstruction", "Unregistered"],
                 "date": datetime.now(),
                 "model": car3["model"],
                 "color": car3["color"],
@@ -144,7 +144,7 @@ class MongoDBHelper:
         
         violation4 = {
                 "plate_number": car1["_id"],
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
                 "date": datetime.now(),
                 "model": car1["model"],
                 "color": car1["color"],
@@ -161,7 +161,7 @@ class MongoDBHelper:
         
         violation6 = {
                 "plate_number": car4["_id"],
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
                 "date": datetime.now(),
                 "model": car4["model"],
                 "color": car4["color"],
@@ -177,7 +177,7 @@ class MongoDBHelper:
         
         violation8 = {
                 "plate_number": car6["_id"],
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
                 "date": datetime.now(),
                 "model": car6["model"],
                 "color": car6["color"],
@@ -191,7 +191,7 @@ class MongoDBHelper:
         reading1 = {
                 "plate_number": car1["_id"],
                 "date": datetime.now(),
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
             }
 
         reading2 = {
@@ -209,7 +209,7 @@ class MongoDBHelper:
         reading4 = {
                 "plate_number": car5["_id"],
                 "date": datetime.now(),
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
             }
         
         reading5 = {
@@ -227,7 +227,7 @@ class MongoDBHelper:
         reading7 = {
                 "plate_number": car1["_id"],
                 "date": datetime.now(),
-                "violations": ["Missing"],
+                "violations": ["Unregistered"],
             }
         
         reading8 = {
